@@ -1,7 +1,23 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
 }
 
 a {
@@ -18,17 +34,18 @@ li {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  height: 100vh;
+  min-height: 100vh;
   color: #121212;
 }
 
 .wrapper {
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
   height: 100%;
+  overflow: hidden;
   max-width: 1440px;
-  padding: 15px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 ._container {
@@ -38,6 +55,7 @@ body {
 
 .header {
   max-width: 1380px;
+  width: 100%;
   margin-left: auto;
 }
 
@@ -105,4 +123,42 @@ body {
 
 .registration_btn.active {
   background: #f5f2ec;
+}
+
+/* ______ main ______ */
+
+/* section connect */
+.section_connect {
+  max-width: 1360px;
+  margin-left: auto;
+  padding-left: 50px;
+}
+
+.section_connect-top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 94px;
+}
+
+.section_connect-info-images {
+  width: 390px;
+  height: 390px;
+  overflow: hidden;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.section_connect-title {
+  font-size: 60px;
+  letter-spacing: -0.5px;
+  max-width: 498px;
+  line-height: 72px;
+  margin-bottom: 34px;
+}
+
+.section_connect-info p {
+  color: rgba(33, 56, 62, 0.7);
+  max-width: 405px;
+  letter-spacing: 0.5px;
+  line-height: 26px;
 }
